@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <script src="js.js"></script>
+    <title>Temprature converter website</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="temp-calculator">
+        <h1 class="title">Temperature Conversion </h1>
+        
+        <div id="degree">
+          <span>
+            <p>From</p>
+            <select name="input" id="input">
+              <option value="celsius">Celsius(°C)</option>
+              <option value="fahrenhiet">Fahrenhiet(°F)</option>
+              <option value="kelvin">Kelvin(°K)</option>
+            </select>
+          </span>
+          <span>
+            <p>To</p>
+            <select name="output" id="output">
+              <option value="celsius">Celsius(°C)</option>
+              <option value="fahrenhiet">Fahrenhiet(°F)</option>
+              <option value="kelvin">Kelvin(°K)</option>
+            </select>
+          </span>
+        </div>
+        <form class="temp-value" id="myForm">
+            <p>Value:</p>
+            <input type="text" placeholder="0" id="input-value" name="value" />
+          </form>
+        
+        <div class="btn">
+          <input type="reset" onclick="resetForm()" value="RESET"/>
+          <input type="button" onclick="convertTemprature()" id="CONVERT" value="CONVERT"/>
+        </div>
+
+        <div class="temp-value">
+          <p id="ans">result:</p>
+          <input type="text" id="result" value=""/>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

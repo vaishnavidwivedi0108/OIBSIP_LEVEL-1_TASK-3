@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+    
+    box-sizing: border-box;
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url("photo-1560977501-7cb367eccebe.jpg");
+    background-size: cover;
+    color: #dee3d5;
+    
+}
+.container{
+    background: transparent;
+    display: flex;
+    height: 500px;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.temp-calculator{
+    width: 100%;
+    padding: 0 20px;
+    margin: 25px 0;
+
+    
+}
+.title{
+    font-size: 25px;
+    font-weight: 600;
+    color: #3183ee;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+}
+.temp-value{
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    
+    justify-content: space-evenly;
+
+}
+.temp-value p{
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    text-align: left;
+    padding: 10px 0;
+    flex-basis: 42%;
+}
+.temp-value input{
+    width: 100%;
+    border: 0;
+    outline: none;
+    font-size: 14px;
+    border-radius: 6px;
+    color: #ff004f;
+    background: #042a5ec7;
+    width: 55%;
+    padding: 10px;
+    flex-basis: 55%;
+}
+#degree{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#degree span{
+    flex-basis: 48%;
+}
+#degree span p{
+    
+    font-size: 1.2em;
+    font-weight: 600;
+    align-items: center;
+    text-align: left;
+    padding: 5px 10px;
+}
+#degree span select{
+    width: 100%;
+    border: 0;
+    outline: none;
+    font-size: 14px;
+    border-radius: 6px;
+    color: #fff;
+    background: #042a5ec7;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn input{
+    font-size: 16px;
+    background-color: #ff004f;
+    padding: 10px;
+    flex-basis: 45%;
+    color: #fff;
+    flex-wrap: wrap;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.temp-value #ans{
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    text-align: left;
+    padding: 10px 0;
+    flex-basis: 25%;
+}
+.temp-value #result{
+    width: 100%;
+    border: 0;
+    outline: none;
+    font-size: 14px;
+    border-radius: 6px;
+    color: #fff;
+    background: #042a5ec7;
+    width: 60%;
+    padding: 10px;
+    flex-basis: 70%;
+    cursor: default;
+}
